@@ -1,0 +1,91 @@
+﻿{
+  "questions": [
+    {
+      "id": "#question1",
+      "error": [
+        {
+          "id": "socks1",
+          "description": "<li>The socks seem to be riding too low - below the ankle. Sock should sit comfortably above the ankle bone!</li>",
+          "src":  "<img src='img/chef_01_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_01.jpg",
+      "nonError": [
+        {
+          "id": "toe-cap1",
+          "description": "<li>The shoe isn't stained.</li>"
+        },
+        {
+          "id": "laces1",
+          "description": "<li>Properly and neatly tied-up laces.</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question2",
+      "error": [
+        {
+          "id": "pants2",
+          "description": "<li>The trouser length is too short. The length of the trouser should cover the socks.</li>",
+          "src":  "<img src='img/chef_02_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_02.jpg",
+      "nonError": [
+        {
+          "id": "heels2",
+          "description": "<li>The heels isn't stained</li>"
+        },
+        
+        {
+          "id": "socks2",
+          "description": "<li>The socks is normal.</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question3",
+      "error": [
+        {
+          "id": "pants3",
+          "description": "<li>The trouser length is too long. The length of the trouser should cover the socks.</li>",
+          "src":  "<img src='img/chef_03_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_03.jpg",
+      "nonError": [
+        {
+          "id": "heels3",
+          "description": "<li>The heels isn't stained</li>"
+        },
+        
+        {
+          "id": "toe-cap3",
+          "description": "<li>The shoe isn't stained.</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question4",
+      "error": [
+        {
+          "id": "sleeves4",
+          "description": "<li>The sleeves are too long. It should be folded to ¾ length i.e. exactly half way between the elbow joint and the wrist joint.</li>",
+          "src":  "<img src='img/chef_04_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_04.jpg",
+      "nonError": [
+        {
+          "id": "pen4",
+          "description": "<li>The heels isn't stained</li>"
+        },
+        
+        {
+          "id": "button4",
+          "description": "<li>The shoe isn't stained.</li>"
+        }
+      ]
+    }
+  ]
+}

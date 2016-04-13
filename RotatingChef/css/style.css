@@ -1,0 +1,85 @@
+﻿html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    display: table;
+  
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background: none;
+}
+
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align: center;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+.col-fixed {
+    /* custom width */
+    width: 320px;
+}
+
+.col-min {
+    /* custom min width */
+    min-width: 320px;
+}
+
+.col-max {
+    /* custom max width */
+    max-width: 320px;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.detail {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background: white;
+    opacity: 0.5;
+    z-index: 1000;
+}
+
+/*.detail-0 {
+    top: 40px;
+    left: 40px;
+}
+
+.detail-7 {
+    right: 40px;
+    bottom: 40px;
+}
+
+.detail-14 {
+    top: 40px;
+    left: 40px;
+}*/
