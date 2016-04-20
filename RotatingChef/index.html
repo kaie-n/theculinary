@@ -6,6 +6,7 @@
     <link href="css/jquery-ui.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/jquery.imagemapster.js"></script>
@@ -13,23 +14,34 @@
     <script src="js/rotating.js"></script>
 </head>
 <body>
+    <div id="overlay">
+        <div class="overlay-center">
+
+            <i class="fa fa-circle-o-notch fa-spin" style="font-size: 50px; margin:0 auto;"></i><br /><br />
+            Loading..
+        </div>
+    </div>
+
     <div class="container">
         <div class="row row-centered row-eq-height vertical-center">
             <div class="col-sm-4 active center-block ">
                 <div class="col-sm-12">
-                    <div id="spinner" class="center-block"></div>
-                    <div class="details" style="display:none;">
+                    <div id="spinner-male" class="center-block"></div>
+                    <div id="spinner-female" class="center-block"></div>
+                    <div class="details-male" style="display:none;">
                         <!--<div class="detail detail-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
                         <div class="detail detail-7">sed diam nonumy eirmod tempor invidunt ut labore et</div>
                         <div class="detail detail-14">consetetur sadipscing elitr, sed diam nonumy eirmod</div>-->
                         <map name="Map0" id="Map0">
-                            <area shape="poly" href="#" data-key="sleeve-left" data-title="Sleeve" title="sleeve-left" coords="78,132,71,145,66,166,63,180,63,189,62,198,64,207,65,215,65,221,63,232,64,236,67,236,70,234,76,234,80,236,86,238,88,236,89,228,89,223,89,218,90,207,93,199,94,191,94,185,94,178,91,169,91,155,90,145,88,142,85,137,83,135" />
+                            <area shape="poly" href="#" data-key="sleeve" data-title="Sleeve" title="sleeve-left" coords="78,132,71,145,66,166,63,180,63,189,62,198,64,207,65,215,65,221,63,232,64,236,67,236,70,234,76,234,80,236,86,238,88,236,89,228,89,223,89,218,90,207,93,199,94,191,94,185,94,178,91,169,91,155,90,145,88,142,85,137,83,135" />
 
                             <area shape="poly" href="#" data-key="button" data-title="Button" title="button" coords="112,123,123,127,132,132,144,132,154,128,158,127,160,137,161,148,164,158,164,168,164,180,164,191,164,218,164,236,163,239,151,238,145,240,135,239,121,240,116,240,114,220,114,204,112,191,112,177,110,165,110,150,108,138,109,129" />
 
-                            <area shape="poly" href="#" data-key="sleeve-right" data-title="Sleeve" title="sleeve-right" coords="176,242,191,238,196,237,198,237,197,222,197,216,196,202,196,194,195,182,194,173,192,165,190,158,189,149,185,138,180,130,178,126,178,159,178,169,176,177,174,199,171,209,169,214,173,219,174,227,174,232" />
+                            <area shape="poly" href="#" data-key="sleeve" data-title="Sleeve" title="sleeve-right" coords="176,242,191,238,196,237,198,237,197,222,197,216,196,202,196,194,195,182,194,173,192,165,190,158,189,149,185,138,180,130,178,126,178,159,178,169,176,177,174,199,171,209,169,214,173,219,174,227,174,232" />
 
-                            <area shape="poly" href="#" data-key="shoe-right" data-title="Shoe" title="shoe-right" coords="135,483,135,490,135,496,135,501,139,507,141,513,143,519,147,521,152,523,160,522,166,521,170,517,169,511,169,507,167,502,163,495,160,491,159,486,161,484,159,481,156,480,152,480,145,481,142,482,139,482" />
+                            <area shape="poly" href="#" data-key="shoe" data-title="Shoe" title="shoe-right" coords="135,483,135,490,135,496,135,501,139,507,141,513,143,519,147,521,152,523,160,522,166,521,170,517,169,511,169,507,167,502,163,495,160,491,159,486,161,484,159,481,156,480,152,480,145,481,142,482,139,482" />
+
+                            <area shape="poly" href="#" data-key="shoe" data-title="Shoe" title="Shoe" coords="93,489,91,497,89,501,85,506,82,510,80,514,80,520,80,526,89,528,99,529,105,527,109,524,110,519,112,515,115,512,120,508,120,504,119,494,119,489,115,490,108,490,104,489,97,489" />
 
                             <area shape="poly" href="#" data-key="pen" data-title="Pen" title="pen" coords="89,256,87,258,87,260,87,269,89,271,89,260,91,260" />
 
@@ -46,31 +58,36 @@
                         </map>
                     </div>
                 </div>
-                <div class="col-sm-12">
-                    <div id="slider"></div>
+                <div class="col-sm-12" >
+                    <button id="btn-male" class="btn btn-default">Male</button> 
+                    <button id="btn-female" class="btn btn-default">Female</button><br />
+                    <ul class="pagination" id="navigational">
+                        <li><button id="show-all" class="btn btn-default">Show all areas</button></li>
+                    </ul>
+                    
+                    <div id="slider" class="hide"></div>
                 </div>
             </div>
-            <div class="col-sm-8" id="information" >
+            <div class="col-sm-8" id="information">
+                <nav id="nav">
+                    <button id="btn-home" class="btn btn-default">Home</button>
+                </nav>
                 <div class="col-sm-12" id="home">
                     <div class="col-sm-12" id="title">
                         <h2>Welcome to The Culinary Academy</h2>
                     </div>
-                    <div class="col-sm-12">
+                    <!--<div class="col-sm-12">
                         <div class="text-center embed-responsive embed-responsive-16by9">
                             <video class="embed-responsive-item" controls>
                                 <source src="sample/groom.mp4" type="video/mp4" />
                             </video>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col-sm-12 margin-top-10 text-justify">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod imperdiet lorem, sed eleifend orci vehicula in. Ut ac mattis massa. Suspendisse potenti. Cras eget diam at enim ornare consequat. Phasellus pulvinar purus eu quam tempus malesuada. </p>
                     </div>
                 </div>
-                <nav id="nav">
-                    <button id="btn-prev" class="btn btn-default">Previous</button>
-                    <button id="btn-home" class="btn btn-default">Home</button>
-                    <button id="btn-next" class="btn btn-default">Next</button>
-                </nav>
+                
             </div>
         </div>
     </div>

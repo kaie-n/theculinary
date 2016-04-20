@@ -83,3 +83,24 @@ body {
     top: 40px;
     left: 40px;
 }*/
+#overlay {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    background: #FFF;
+    text-align: center;
+    display: table;
+}
+
+.overlay-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+

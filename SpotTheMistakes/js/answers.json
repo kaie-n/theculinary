@@ -6,7 +6,7 @@
         {
           "id": "socks1",
           "description": "<li>The socks seem to be riding too low - below the ankle. Sock should sit comfortably above the ankle bone!</li>",
-          "src":  "<img src='img/chef_01_correct.jpg' style='width:100%;' />"
+          "src": "<img src='img/chef_01_correct.jpg' style='width:100%;' />"
         }
       ],
       "src": "img/chef_01.jpg",
@@ -27,7 +27,7 @@
         {
           "id": "pants2",
           "description": "<li>The trouser length is too short. The length of the trouser should cover the socks.</li>",
-          "src":  "<img src='img/chef_02_correct.jpg' style='width:100%;' />"
+          "src": "<img src='img/chef_02_correct.jpg' style='width:100%;' />"
         }
       ],
       "src": "img/chef_02.jpg",
@@ -36,7 +36,7 @@
           "id": "heels2",
           "description": "<li>The heels isn't stained</li>"
         },
-        
+
         {
           "id": "socks2",
           "description": "<li>The socks is normal.</li>"
@@ -49,7 +49,7 @@
         {
           "id": "pants3",
           "description": "<li>The trouser length is too long. The length of the trouser should cover the socks.</li>",
-          "src":  "<img src='img/chef_03_correct.jpg' style='width:100%;' />"
+          "src": "<img src='img/chef_03_correct.jpg' style='width:100%;' />"
         }
       ],
       "src": "img/chef_03.jpg",
@@ -58,7 +58,7 @@
           "id": "heels3",
           "description": "<li>The heels isn't stained</li>"
         },
-        
+
         {
           "id": "toe-cap3",
           "description": "<li>The shoe isn't stained.</li>"
@@ -71,19 +71,258 @@
         {
           "id": "sleeves4",
           "description": "<li>The sleeves are too long. It should be folded to ¾ length i.e. exactly half way between the elbow joint and the wrist joint.</li>",
-          "src":  "<img src='img/chef_04_correct.jpg' style='width:100%;' />"
+          "src": "<img src='img/chef_04_correct.jpg' style='width:100%;' />"
         }
       ],
       "src": "img/chef_04.jpg",
       "nonError": [
         {
           "id": "pen4",
-          "description": "<li>The heels isn't stained</li>"
+          "description": "<li>The thermometer is supposed to be there.</li>"
         },
-        
+
         {
           "id": "button4",
-          "description": "<li>The shoe isn't stained.</li>"
+          "description": "<li>Shirt properly buttoned.</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question5",
+      "error": [
+        {
+          "id": "sleeves5",
+          "description": "<li>The sleeve is too short. It should be folded to ¾ length i.e. exactly half way between the elbow joint and the wrist joint.</li>",
+          "src": "<img src='img/chef_05_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_05.jpg",
+      "nonError": [
+        {
+          "id": "apron5",
+          "description": "<li>Apron is folded nicely.</li>"
+        },
+
+        {
+          "id": "towel5",
+          "description": "<li>Towel is folded neatly.</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question6",
+      "error": [
+        {
+          "id": "hat6",
+          "description": "<li>The hat is covering the ear. It should be positioned above and behind the ear.</li>",
+          "src": "<img src='img/chef_06_correct.jpg' style='width:100%;' />"
+        },
+        {
+          "id": "string6",
+          "description": "<li>The hat tie string is hanging out. It should be tucked and hidden in the hat.</li>",
+          "src": "<img src='img/chef_06_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_06.jpg",
+      "nonError": [
+        {
+          "id": "hair6",
+          "description": "<li>Hair is trimmed short.</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question7",
+      "error": [
+        {
+          "id": "string7",
+          "description": "<li>The apron string is untidy. It should be hidden as much as possible and any exposed string should be adjusted neatly.</li>",
+          "src": "<img src='img/chef_07_correct.jpg' style='width:100%;' />"
+        },
+        {
+          "id": "jacket7",
+          "description": "<li>The jacket is bunching at the waist. It should be pulled down so that the back is neat.</li>",
+          "src": "<img src='img/chef_07_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_07.jpg",
+      "nonError": [
+        {
+          "id": "sleeve7",
+          "description": "<li>Sleeve is folded neatly!</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question8",
+      "error": [
+        {
+          "id": "shoe8",
+          "description": "<li>Dirty shoes. Shoes should be cleaned and all scuff marks polished away.</li>",
+          "src": "<img src='img/chef_08_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_08.jpg",
+      "nonError": [
+        {
+          "id": "pants8",
+          "description": "<li>The pants is at the appropriate length!</li>"
+        },
+        {
+          "id": "apron8",
+          "description": "<li>Apron is neat and tidy!</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question9",
+      "error": [
+        {
+          "id": "neckerchief9",
+          "description": "<li>Neckerchief is not placed neatly. It needs to be adjusted center and squarely.</li>",
+          "src": "<img src='img/chef_09_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_09.jpg",
+      "nonError": [
+        {
+          "id": "knife9",
+          "description": "<li>Utensils at the correct pocket!</li>"
+        },
+        {
+          "id": "jacket9",
+          "description": "<li>Chef's jacket is neat and tidy!</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question10",
+      "error": [
+        {
+          "id": "ear10",
+          "description": "<li>The hairband is covering the ear. It needs to be hidden.</li>",
+          "src": "<img src='img/chef_10_correct.jpg' style='width:100%;' />"
+        },
+        {
+          "id": "hairband10",
+          "description": "<li>The hairband is exposed. It needs to be hidden.</li>",
+          "src": "<img src='img/chef_10_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_10.jpg",
+      "nonError": [
+        {
+          "id": "neckerchief10",
+          "description": "<li>Neckerchief is placed neatly. It is center and squarely!</li>"
+        },
+        {
+          "id": "hat10",
+          "description": "<li>Chef's hat is worn properly!</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question11",
+      "error": [
+        {
+          "id": "hair11",
+          "description": "<li>Untidy and fly away hair. Hair should be very neat and may be held in place with hair products if necessary.</li>",
+          "src": "<img src='img/chef_11_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_11.jpg",
+      "nonError": [
+        {
+          "id": "hat11",
+          "description": "<li>Chef's hat is worn properly!</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question12",
+      "error": [
+        {
+          "id": "tshirt12",
+          "description": "<li>Colourful undergarments showing through the jacket. All undergarments should be plain white.</li>",
+          "src": "<img src='img/chef_12_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_12.jpg",
+      "nonError": [
+        {
+          "id": "sleeve12",
+          "description": "<li>The sleeve is proper!</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question13",
+      "error": [
+        {
+          "id": "stain13",
+          "description": "<li>Jacket is stained. All fabric items must be free of dirt and stains.</li>",
+          "src": "<img src='img/chef_13_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_13.jpg",
+      "nonError": [
+        {
+          "id": "sleeve13",
+          "description": "<li>The sleeve is proper!</li>"
+        },
+        {
+          "id": "null13",
+          "description": "<li>There is nothing wrong with the jacket!</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question14",
+      "error": [
+        {
+          "id": "seam14",
+          "description": "<li>Side towel (Touchon) is stained. All fabric items must be free of dirt and stains.</li>",
+          "src": "<img src='img/chef_14_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_14.jpg",
+      "nonError": [
+        {
+          "id": "stain14",
+          "description": "<li>There is nothing wrong with this!</li>"
+        }
+      ]
+    },
+    {
+      "id": "#question15",
+      "error": [
+        {
+          "id": "nails15",
+          "description": "<li>Fingernail white is showing, therefore nails are too long. Fingernails must be short i.e. no white showing. </li>",
+          "src": "<img src='img/chef_15_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_15.jpg",
+      "nonError": []
+    },
+    {
+      "id": "#question16",
+      "error": [
+        {
+          "id": "jacket16",
+          "description": "<li>Jacket is unbuttoned. The uniform must always be worn properly. </li>",
+          "src": "<img src='img/chef_16_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_16.jpg",
+      "nonError": [
+        {
+          "id": "neckerchief16",
+          "description": "<li>There is nothing wrong with this!</li>"
+        },
+        {
+          "id": "face16",
+          "description": "<li>There is nothing wrong with this!</li>"
         }
       ]
     }
