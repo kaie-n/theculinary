@@ -11,7 +11,8 @@
     <script src="js/jquery-ui.js"></script>
     <script src="js/jquery.imagemapster.js"></script>
     <script src="js/spritespin.min.js"></script>
-    <script src="js/rotating.js"></script>
+    <!--<script src="js/rotating.js"></script>-->
+    <script src="js/rotatingv2.js"></script>
 </head>
 <body>
     <div id="overlay">
@@ -32,28 +33,59 @@
                         <!--<div class="detail detail-0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</div>
                         <div class="detail detail-7">sed diam nonumy eirmod tempor invidunt ut labore et</div>
                         <div class="detail detail-14">consetetur sadipscing elitr, sed diam nonumy eirmod</div>-->
-                        <map name="Map0" id="Map0">
-                            <area shape="poly" href="#" data-key="sleeve" data-title="Sleeve" title="sleeve-left" coords="78,132,71,145,66,166,63,180,63,189,62,198,64,207,65,215,65,221,63,232,64,236,67,236,70,234,76,234,80,236,86,238,88,236,89,228,89,223,89,218,90,207,93,199,94,191,94,185,94,178,91,169,91,155,90,145,88,142,85,137,83,135" />
+                        <map name="maleMap0" id="maleMap0">
+                            <area shape="poly" href="#" data-key="sleeve" data-title="Sleeve" title="Sleeve" coords="78,132,71,145,66,166,63,180,63,189,62,198,64,207,65,215,65,221,63,232,64,236,67,236,70,234,76,234,80,236,86,238,88,236,89,228,89,223,89,218,90,207,93,199,94,191,94,185,94,178,91,169,91,155,90,145,88,142,85,137,83,135" />
 
-                            <area shape="poly" href="#" data-key="button" data-title="Button" title="button" coords="112,123,123,127,132,132,144,132,154,128,158,127,160,137,161,148,164,158,164,168,164,180,164,191,164,218,164,236,163,239,151,238,145,240,135,239,121,240,116,240,114,220,114,204,112,191,112,177,110,165,110,150,108,138,109,129" />
+                            <area shape="poly" href="#" data-key="button" data-title="Button" title="Button" coords="112,123,123,127,132,132,144,132,154,128,158,127,160,137,161,148,164,158,164,168,164,180,164,191,164,218,164,236,163,239,151,238,145,240,135,239,121,240,116,240,114,220,114,204,112,191,112,177,110,165,110,150,108,138,109,129" />
 
-                            <area shape="poly" href="#" data-key="sleeve" data-title="Sleeve" title="sleeve-right" coords="176,242,191,238,196,237,198,237,197,222,197,216,196,202,196,194,195,182,194,173,192,165,190,158,189,149,185,138,180,130,178,126,178,159,178,169,176,177,174,199,171,209,169,214,173,219,174,227,174,232" />
+                            <area shape="poly" href="#" data-key="face" data-title="Face" title="Face" coords="115,70,118,87,125,97,131,101,135,102,140,102,145,99,149,96,150,92,153,86,156,79,157,73,157,67,155,64,152,58,147,54,142,53,136,52,129,53,124,56,119,60,116,65" />
 
-                            <area shape="poly" href="#" data-key="shoe" data-title="Shoe" title="shoe-right" coords="135,483,135,490,135,496,135,501,139,507,141,513,143,519,147,521,152,523,160,522,166,521,170,517,169,511,169,507,167,502,163,495,160,491,159,486,161,484,159,481,156,480,152,480,145,481,142,482,139,482" />
+                            <area shape="poly" href="#" data-key="sleeve" data-title="Sleeve" title="Sleeve" coords="176,242,191,238,196,237,198,237,197,222,197,216,196,202,196,194,195,182,194,173,192,165,190,158,189,149,185,138,180,130,178,126,178,159,178,169,176,177,174,199,171,209,169,214,173,219,174,227,174,232" />
+
+                            <area shape="poly" href="#" data-key="shoe" data-title="Shoe" title="Shoe" coords="135,483,135,490,135,496,135,501,139,507,141,513,143,519,147,521,152,523,160,522,166,521,170,517,169,511,169,507,167,502,163,495,160,491,159,486,161,484,159,481,156,480,152,480,145,481,142,482,139,482" />
 
                             <area shape="poly" href="#" data-key="shoe" data-title="Shoe" title="Shoe" coords="93,489,91,497,89,501,85,506,82,510,80,514,80,520,80,526,89,528,99,529,105,527,109,524,110,519,112,515,115,512,120,508,120,504,119,494,119,489,115,490,108,490,104,489,97,489" />
 
-                            <area shape="poly" href="#" data-key="pen" data-title="Pen" title="pen" coords="89,256,87,258,87,260,87,269,89,271,89,260,91,260" />
+                            <area shape="poly" href="#" data-key="pen" data-title="Pen" title="Pen" coords="89,256,87,258,87,260,87,269,89,271,89,260,91,260" />
 
-                            <area shape="poly" href="#" data-key="apron" data-title="Apron" title="apron" coords="97,259,107,240,141,242,149,242,150,254,156,313,160,316,175,315,187,436,165,444,132,449,110,451,89,452,69,447,75,309,86,309,88,308,88,291,87,282,84,272,90,272,95,271" />
+                            <area shape="poly" href="#" data-key="apron" data-title="Apron" title="Apron" coords="97,259,107,240,141,242,149,242,150,254,156,313,160,316,175,315,187,436,165,444,132,449,110,451,89,452,69,447,75,309,86,309,88,308,88,291,87,282,84,272,90,272,95,271" />
 
-                            <area shape="poly" href="#" data-key="side-towel" data-title="Side Towel" title="side-towel" coords="147,240,149,249,151,267,153,287,154,301,156,313,156,315,158,315,160,317,165,316,172,315,178,314,183,311,185,309,182,292,182,282,181,271,179,262,177,251,176,240,174,237,171,237,165,238,156,238,149,239" />
+                            <area shape="poly" href="#" data-key="side-towel" data-title="Side Towel" title="Side Towel" coords="147,240,149,249,151,267,153,287,154,301,156,313,156,315,158,315,160,317,165,316,172,315,178,314,183,311,185,309,182,292,182,282,181,271,179,262,177,251,176,240,174,237,171,237,165,238,156,238,149,239" />
 
-                            <area shape="poly" href="#" data-key="tasting-spoon" data-title="Tasting Spoon" title="tasting-spoon" coords="183,138,181,139,185,154,188,155,187,147,185,145" />
+                            <area shape="poly" href="#" data-key="tasting-spoon" data-title="Tasting Spoon" title=""Tasting Spoon" coords="183,138,181,139,185,154,188,155,187,147,185,145" />
 
-                            <area shape="poly" href="#" data-key="neckerchief" data-title="Neckerchief" title="neckerchief " coords="143,125,141,129,138,130,135,131,130,126,127,123,128,119,130,121,132,119,141,119,142,121" />
+                            <area shape="poly" href="#" data-key="neckerchief" data-title="Neckerchief" title="Neckerchief " coords="143,125,141,129,138,130,135,131,130,126,127,123,128,119,130,121,132,119,141,119,142,121" />
 
-                            <area shape="poly" href="#" data-key="hat" data-title="Hat" title="hat" coords="106,52,109,45,111,41,112,39,118,34,121,30,124,30,130,28,137,29,142,29,147,30,151,32,155,34,159,37,165,48,164,54,163,59,160,64,157,68,153,58,149,54,144,52,138,52,133,52,128,53,123,56,120,60,117,65,114,69,112,63,110,59,108,55" />
+                            <area shape="poly" href="#" data-key="hat" data-title="Hat" title="Hat" coords="106,52,109,45,111,41,112,39,118,34,121,30,124,30,130,28,137,29,142,29,147,30,151,32,155,34,159,37,165,48,164,54,163,59,160,64,157,68,153,58,149,54,144,52,138,52,133,52,128,53,123,56,120,60,117,65,114,69,112,63,110,59,108,55" />
+
+                        </map>
+                    </div>
+                    <div class="details-female" style="display:none;">
+                        <map name="femaleMap0" id="femaleMap0">
+
+                            <area shape="poly" href="#" data-key="shoes2" title="Shoe" coords="98,497,102,498,109,497,115,496,121,496,122,501,123,507,124,510,121,514,116,515,115,518,114,523,111,526,106,529,98,529,91,529,87,525,86,520,88,515,91,510,94,506,96,503,96,500" />
+
+                            <area shape="poly" href="#" data-key="shoes2" title="Shoe" coords="130,492,127,499,127,504,131,507,137,509,138,512,138,519,146,522,158,522,164,520,164,516,163,508,160,504,156,497,152,496,133,491" />
+
+                            <area shape="poly" href="#" data-key="pants2" title="Pants" coords="88,466,88,474,92,479,96,486,98,493,98,497,106,497,118,496,122,495,123,480,125,473,125,468,124,466" />
+
+                            <area shape="poly" href="#" data-key="pants2" title="Pants" coords="130,466,129,471,129,476,128,480,129,488,135,493,147,496,153,497,156,493,159,486,162,480,164,475,162,467,161,465" />
+
+                            <area shape="poly" href="#" data-key="apron2" title="Apron" coords="69,338,58,450,59,454,72,456,78,456,78,462,84,465,95,467,111,467,127,467,143,466,156,464,168,463,171,461,169,348,162,350,160,349,164,344,164,342,156,343,147,345,140,344,138,343,138,340,135,340,137,276,138,262,87,254,87,263,92,268,90,281,83,285,80,310,87,321,88,329,88,338,88,343,85,348,80,347,71,342" />
+
+                            <area shape="poly" href="#" data-key="thermometer2" title="Thermometer" coords="85,266,88,266,90,267,90,270,89,272,87,272,86,275,86,280,83,279,82,273" />
+
+                            <area shape="poly" href="#" data-key="towel2" title="Towel" coords="138,261,138,267,138,279,137,295,137,306,135,334,135,340,139,341,138,343,139,345,142,345,149,345,157,345,163,344,165,340,162,341,160,340,160,336,160,330,161,325,163,320,165,317,165,313,165,300,166,292,166,285,166,276,165,268,164,263,161,260,157,260" />
+
+                            <area shape="poly" href="#" data-key="sleeves2" title="Sleeves" coords="77,184,75,189,74,196,73,203,71,211,70,220,68,228,67,241,66,246,65,253,64,259,64,263,63,266,63,274,64,276,66,277,71,277,76,277,82,279,84,277,85,272,86,267,86,262,87,255,88,244,88,238,88,232,90,227,91,225,91,217,93,208,93,202,88,194,83,186,79,183" />
+
+                            <area shape="poly" href="#" data-key="sleeves2" title="Sleeves" coords="184,210,184,219,185,238,185,244,185,254,185,263,186,271,186,285,177,286,166,286,164,273,165,263,163,259,165,250,164,241,166,229,166,216,166,210" />
+
+
+                            <area shape="poly" href="#" data-key="neckerchief2" title="Neckerchief" coords="125,166,124,168,124,171,125,174,126,177,128,179,130,179,136,177,138,175,139,173,139,168,137,166,134,165,130,165,127,165" />
+
+
+                            <area shape="poly" href="#" data-key="hat2" title="Hat" coords="102,97,107,92,119,83,134,83,142,83,150,86,156,92,157,96,156,103,152,110,151,115,150,119,145,114,140,110,134,108,127,108,123,108,117,112,113,114,110,118,108,119,108,112,104,108,102,104,101,100" />
 
                         </map>
                     </div>
@@ -69,9 +101,7 @@
                 </div>
             </div>
             <div class="col-sm-8" id="information">
-                <nav id="nav">
-                    <button id="btn-home" class="btn btn-default">Home</button>
-                </nav>
+                
                 <div class="col-sm-12" id="home">
                     <div class="col-sm-12" id="title">
                         <h2>Welcome to The Culinary Academy</h2>
@@ -87,7 +117,11 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod imperdiet lorem, sed eleifend orci vehicula in. Ut ac mattis massa. Suspendisse potenti. Cras eget diam at enim ornare consequat. Phasellus pulvinar purus eu quam tempus malesuada. </p>
                     </div>
                 </div>
-                
+                <nav id="nav">
+                    <!--<button id="btn-prev" class="btn btn-default">Previous</button>-->
+                    <button id="btn-home" class="btn btn-default">Home</button>
+                    <!--<button id="btn-next" class="btn btn-default">Next</button>-->
+                </nav>
             </div>
         </div>
     </div>

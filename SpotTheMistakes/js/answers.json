@@ -5,7 +5,7 @@
       "error": [
         {
           "id": "socks1",
-          "description": "<li>The socks seem to be riding too low - below the ankle. Sock should sit comfortably above the ankle bone!</li>",
+          "description": "<li>The sock is riding too low - below the ankle. Socks should sit comfortably above the ankle bone!</li>",
           "src": "<img src='img/chef_01_correct.jpg' style='width:100%;' />"
         }
       ],
@@ -17,7 +17,7 @@
         },
         {
           "id": "laces1",
-          "description": "<li>Properly and neatly tied-up laces.</li>"
+          "description": "<li>The lace is properly and neatly tied up.</li>"
         }
       ]
     },
@@ -39,7 +39,7 @@
 
         {
           "id": "socks2",
-          "description": "<li>The socks is normal.</li>"
+          "description": "<li>The sock is correctly worn above the ankle.</li>"
         }
       ]
     },
@@ -48,7 +48,7 @@
       "error": [
         {
           "id": "pants3",
-          "description": "<li>The trouser length is too long. The length of the trouser should cover the socks.</li>",
+          "description": "<li>The trouser length is too long. The length of the trouser should not bunch over your shoes.</li>",
           "src": "<img src='img/chef_03_correct.jpg' style='width:100%;' />"
         }
       ],
@@ -83,7 +83,7 @@
 
         {
           "id": "button4",
-          "description": "<li>Shirt properly buttoned.</li>"
+          "description": "<li>The shirt is properly buttoned.</li>"
         }
       ]
     },
@@ -100,12 +100,12 @@
       "nonError": [
         {
           "id": "apron5",
-          "description": "<li>Apron is folded nicely.</li>"
+          "description": "<li>The apron is folded nicely.</li>"
         },
 
         {
           "id": "towel5",
-          "description": "<li>Towel is folded neatly.</li>"
+          "description": "<li>The towel is folded neatly.</li>"
         }
       ]
     },
@@ -187,11 +187,11 @@
       "nonError": [
         {
           "id": "knife9",
-          "description": "<li>Utensils at the correct pocket!</li>"
+          "description": "<li>The utensils at the correct pocket!</li>"
         },
         {
           "id": "jacket9",
-          "description": "<li>Chef's jacket is neat and tidy!</li>"
+          "description": "<li>The chef's jacket is neat and tidy!</li>"
         }
       ]
     },
@@ -199,13 +199,8 @@
       "id": "#question10",
       "error": [
         {
-          "id": "ear10",
-          "description": "<li>The hairband is covering the ear. It needs to be hidden.</li>",
-          "src": "<img src='img/chef_10_correct.jpg' style='width:100%;' />"
-        },
-        {
           "id": "hairband10",
-          "description": "<li>The hairband is exposed. It needs to be hidden.</li>",
+          "description": "<li>The hairband is exposed and is covering the ear. It needs to be hidden and tucked under the hat.</li>",
           "src": "<img src='img/chef_10_correct.jpg' style='width:100%;' />"
         }
       ],
@@ -213,11 +208,11 @@
       "nonError": [
         {
           "id": "neckerchief10",
-          "description": "<li>Neckerchief is placed neatly. It is center and squarely!</li>"
+          "description": "<li>The neckerchief is placed neatly. It is center and squarely!</li>"
         },
         {
           "id": "hat10",
-          "description": "<li>Chef's hat is worn properly!</li>"
+          "description": "<li>The chef's hat is worn properly!</li>"
         }
       ]
     },
@@ -234,7 +229,7 @@
       "nonError": [
         {
           "id": "hat11",
-          "description": "<li>Chef's hat is worn properly!</li>"
+          "description": "<li>The chef's hat is worn properly!</li>"
         }
       ]
     },
@@ -268,11 +263,11 @@
       "nonError": [
         {
           "id": "sleeve13",
-          "description": "<li>The sleeve is proper!</li>"
+          "description": "<li>The sleeve is of the proper length.</li>"
         },
         {
           "id": "null13",
-          "description": "<li>There is nothing wrong with the jacket!</li>"
+          "description": "<li>There is nothing wrong along the jacket button holes.</li>"
         }
       ]
     },
@@ -289,7 +284,7 @@
       "nonError": [
         {
           "id": "stain14",
-          "description": "<li>There is nothing wrong with this!</li>"
+          "description": "<li>Some of the spots are part of the fabric.</li>"
         }
       ]
     },
@@ -298,7 +293,7 @@
       "error": [
         {
           "id": "nails15",
-          "description": "<li>Fingernail white is showing, therefore nails are too long. Fingernails must be short i.e. no white showing. </li>",
+          "description": "<li>Fingernail white is showing, therefore nails are too long. Fingernails must be short, i.e. no white showing. </li>",
           "src": "<img src='img/chef_15_correct.jpg' style='width:100%;' />"
         }
       ],
@@ -318,13 +313,25 @@
       "nonError": [
         {
           "id": "neckerchief16",
-          "description": "<li>There is nothing wrong with this!</li>"
+          "description": "<li>The neckerchief is placed neatly. It is center and squarely!</li>"
         },
         {
           "id": "face16",
-          "description": "<li>There is nothing wrong with this!</li>"
+          "description": "<li>The chef is clean shaven.</li>"
         }
       ]
+    },
+    {
+      "id": "#question17",
+      "error": [
+        {
+          "id": "moustache",
+          "description": "<li>The chef's facial hair is unshaven. </li>",
+          "src": "<img src='img/chef_17_correct.jpg' style='width:100%;' />"
+        }
+      ],
+      "src": "img/chef_17.jpg",
+      "nonError": []
     }
   ]
 }
